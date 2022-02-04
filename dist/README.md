@@ -1,5 +1,5 @@
 
-  # Project Title
+  # README.md Generator
 
   
   ## License
@@ -9,7 +9,7 @@
   
   
   ## Description
-  description of my project
+  This application will generate a README.md file for GitHub or another open source platform
   
   ## Table of Contents
   
@@ -22,23 +22,26 @@
   
   <a name="installation"></a>
   ## Installation
-  intallation instructions would go here 
+  To get the app running clone this repo then open the terminal and run "npm init" and then "npm install inquirer"
   
   <a name="usage"></a>
   ## Usage
-  instructions to use the project
+  This app is most useful in creating README.md files that explain a project on GitHub clearly and in a way that is easy to navigate
   
   <a name="credits"></a>
   ## Credits
-  here are some of the collaborators
+  No other collaborators.
 
   <a name="tests"></a>
   ## Tests
-  here are some of the collaborators
+  No other collaborators.
   
   <a name="contact"></a>
   ## Questions 
-  Contact repo owner: 
-  Kate
-  [email](mailto:johnson.kat.g@gmail.com)
+  Contact for questions and suggestions: 
+
+  Kate J
+
+  [email](mailto:example@email.com)
+
   [GitHub](https://github.com/k-g-j)

@@ -42,7 +42,7 @@ function generateMarkdown(data) {
 
   <a name="tests"></a>
   ## Tests
-  ${data.credits}
+  ${data.tests}
   
   <a name="contact"></a>
   ## Questions 
