@@ -3,6 +3,9 @@
   ## Description
   This application will generate a README.md file for GitHub or another open source platform
   
+  <img width="1490" alt="README Generator Demo Pic" src="https://user-images.githubusercontent.com/91970214/152596769-0434c0bb-06cb-40fe-8d60-1c574dac6517.png">
+
+  
   ## Table of Contents
   
   - [Installation](#installation)
