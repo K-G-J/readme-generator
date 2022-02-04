@@ -9,7 +9,7 @@
   
   
   ## Description
-  This application will generate a README.md file for GitHub or another open source platform
+  This project will generate a professional quality README.md file for GitHub or any other open source platform using markdown text
   
   ## Table of Contents
   
@@ -22,19 +22,19 @@
   
   <a name="installation"></a>
   ## Installation
-  To get the app running clone this repo then open the terminal and run "npm init" and then "npm install inquirer"
+  clone the GitHub repository, open terminal, run npm init, run npm install inquirer, run node index
   
   <a name="usage"></a>
   ## Usage
-  This app is most useful in creating README.md files that explain a project on GitHub clearly and in a way that is easy to navigate
+  You can use this project to generate a README.md file to explain your projects to other developers on GitHub or other websites for code sharing 
   
   <a name="credits"></a>
   ## Credits
-  No other collaborators.
+  No other collaborators
 
   <a name="tests"></a>
   ## Tests
-  No other collaborators.
+  To test - clone the repo and follow installation instructions above, then open the termal and run "node index"
   
   <a name="contact"></a>
   ## Questions 
