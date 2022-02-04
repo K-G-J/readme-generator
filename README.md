@@ -26,7 +26,7 @@
 
   <a name="tests"></a>
   ## Tests
-  To test this application clone the git repo, open the terminal, following the installation guidelines above and then run "node index"
+  To test this application clone the git repo, open the terminal, follow the installation guidelines above and then run "node index"
   
   <a name="contact"></a>
   ## Questions 
