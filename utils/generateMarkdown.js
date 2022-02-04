@@ -9,7 +9,7 @@ function renderLicenseSection(data) {
   }
   return `
   ## License
-  ![licenseBadge](https://img.shields.io/badge/License-$${data.license}-blue.svg)
+  ![licenseBadge](https://img.shields.io/badge/License-${data.license}-blue.svg)
   ${data.license}
   [Full license information](${data.licenseLink}).
   `;
@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ${renderLicenseSection(license)}
+  ${renderLicenseSection(data)}
   
   ## Description
   ${data.description}
@@ -52,11 +52,13 @@ function generateMarkdown(data) {
   
   <a name="contact"></a>
   ## Questions 
-  ${data.name} [email] (${data.email})
-  [GitHub] (https://github.com/${data.githubusername})
+  Contact repo owner at: 
+  ${data.name}
+  [email](mailto:${data.email})
+  [GitHub](https://github.com/${data.github})
 `;
 }
 
-module.exports = {renderLicenseSection, generateMarkdown};
+module.exports = generateMarkdown;
 
 

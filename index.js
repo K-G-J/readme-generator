@@ -2,7 +2,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const renderLicenseSection = require('./utils/renderLicenseSection.js')
 
 // TODO: Create an array of questions for user input
 const promptUser = () => {
@@ -83,10 +82,18 @@ const promptUser = () => {
             name: 'license',
             message: 'What license is your project under?',
             choices: ['MIT','GPLv2', 'Apache', 'GPLv3', 'BSD-3-clause', 'Unlicense', 'BSD 2-clause', 'LGPLv3', 'AGPLv3'],
-            when: ({confirmLisence}) => {
-                if (confirmLisence) {
+            when: ({confirmLicense}) => {
+                if (confirmLicense) {
                     return true;
                 } else {
+                    return false;
+                }
+            },
+            validate: licenseChoice => {
+                if (licenseChoice) {
+                    return true;
+                } else {
+                    console.log('Please select a license!');
                     return false;
                 }
             }
@@ -95,8 +102,8 @@ const promptUser = () => {
             type: 'input',
             name: 'licenseLink',
             message: 'Enter the link to your project license. (Required)',
-            when: ({confirmLisence}) => {
-                if (confirmLisence) {
+            when: ({confirmLicense}) => {
+                if (confirmLicense) {
                     return true;
                 } else {
                     return false;
@@ -132,10 +139,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'credits',
-            message: `List your collaborators, if any, with their GitHub profiles.
-            If you used any third-party assets that require attribution, list the creators.
-            If you followed tutorials, include those as well.
-            `
+            message: `List your collaborators, if any, with their GitHub profiles. If you used any third-party assets that require attribution, list the creators. If you followed tutorials, include those as well.`
         },
         {
             type: 'input',
@@ -144,6 +148,7 @@ const promptUser = () => {
         },
     ])
     .then(data => {
+        console.log(data)
         return data;
     });
 };
@@ -168,7 +173,7 @@ function writeToFile(readmeFile) {
 function init() {
     promptUser()
     .then(data => {
-        return renderLicenseSection(data), generateMarkdown(data)
+        return generateMarkdown(data)
     })
     .then(readmeFile => {
         return writeToFile(readmeFile)
