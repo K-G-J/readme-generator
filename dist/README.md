@@ -3,13 +3,13 @@
 
   
   ## License
-  ![licenseBadge](https://img.shields.io/badge/License-$MIT-blue.svg)
+  ![licenseBadge](https://img.shields.io/badge/License-MIT-blue.svg)
   MIT
-  [Full license information]( mitlicenselink.com).
+  [Full license information](https://www.mit.edu/~amini/LICENSE.md).
   
   
   ## Description
-  qquehgjksdfj
+  description of my project
   
   ## Table of Contents
   
@@ -22,21 +22,23 @@
   
   <a name="installation"></a>
   ## Installation
-  eqoigw
+  intallation instructions would go here 
   
   <a name="usage"></a>
   ## Usage
-  eighroiewghn
+  instructions to use the project
   
   <a name="credits"></a>
   ## Credits
-  aohfohg
+  here are some of the collaborators
 
   <a name="tests"></a>
   ## Tests
-  aohfohg
+  here are some of the collaborators
   
   <a name="contact"></a>
   ## Questions 
-  Kate [email] (johnson.kat.g@gmail.com)
-  [GitHub] (https://github.com/undefined)
+  Contact repo owner: 
+  Kate
+  [email](mailto:johnson.kat.g@gmail.com)
+  [GitHub](https://github.com/k-g-j)
